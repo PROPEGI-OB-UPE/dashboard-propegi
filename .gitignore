@@ -1,0 +1,20 @@
+/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.vscode/
+.DS_Store
+.ropeproject
+# Streamlit secrets
+.streamlit/secrets.toml
+dados/dados com etl/.streamlit/secrets.toml
+
+# Data artifacts
+data/archive/
+data/raw/
+
+# Temporary Excel backups
+*~
+*.xlsx~
+
+.env

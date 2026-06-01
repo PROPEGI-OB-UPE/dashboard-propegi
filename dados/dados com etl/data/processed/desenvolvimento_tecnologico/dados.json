@@ -1,0 +1,65 @@
+[
+  {
+    "Data": "2025-01-15",
+    "Região": "Sudeste",
+    "Vendedor": "João Silva",
+    "Produto": "Notebook",
+    "Quantidade": 2,
+    "ValorUnitário": 3500,
+    "ValorTotal": 7000
+  },
+  {
+    "Data": "2025-01-16",
+    "Região": "Sul",
+    "Vendedor": "Maria Oliveira",
+    "Produto": "Impressora",
+    "Quantidade": 1,
+    "ValorUnitário": 1200,
+    "ValorTotal": 1200
+  },
+  {
+    "Data": "2025-02-03",
+    "Região": "Nordeste",
+    "Vendedor": "Carlos Souza",
+    "Produto": "Monitor",
+    "Quantidade": 3,
+    "ValorUnitário": 800,
+    "ValorTotal": 2400
+  },
+  {
+    "Data": "2025-02-10",
+    "Região": "Centro-Oeste",
+    "Vendedor": "Ana Paula",
+    "Produto": "Teclado",
+    "Quantidade": 5,
+    "ValorUnitário": 150,
+    "ValorTotal": 750
+  },
+  {
+    "Data": "2025-03-01",
+    "Região": "Sudeste",
+    "Vendedor": "João Silva",
+    "Produto": "Mouse",
+    "Quantidade": 10,
+    "ValorUnitário": 100,
+    "ValorTotal": 1000
+  },
+  {
+    "Data": "2025-03-12",
+    "Região": "Sul",
+    "Vendedor": "Maria Oliveira",
+    "Produto": "Notebook",
+    "Quantidade": 1,
+    "ValorUnitário": 3600,
+    "ValorTotal": 3600
+  },
+  {
+    "Data": "2025-03-25",
+    "Região": "Nordeste",
+    "Vendedor": "Carlos Souza",
+    "Produto": "Impressora",
+    "Quantidade": 2,
+    "ValorUnitário": 1100,
+    "ValorTotal": 2200
+  }
+]
