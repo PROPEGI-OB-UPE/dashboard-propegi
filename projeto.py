@@ -8,7 +8,7 @@ from pathlib import Path
 import json
 import os
 
-from utils.data_loader import BASE_DIR, carregar_dados_docentes, carregar_dados_grupos_pesquisa, carregar_dados_apq, carregar_dados_icti, carregar_dados_bolsistas
+from utils.data_loader import carregar_dados_docentes, carregar_dados_grupos_pesquisa, carregar_dados_apq, carregar_dados_icti, carregar_dados_bolsistas
 
 # --- CONFIGURAÇÃO DA PÁGINA ---
 st.set_page_config(page_title="Observatório PROPEGI", layout="wide", initial_sidebar_state="expanded")
@@ -152,7 +152,7 @@ def chart_title_strong(text):
 
 @st.cache_data(show_spinner=False)
 def load_inovacao_base_data():
-    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    base_dir = os.path.dirname(os.path.abspath(__file__))
     csv_path = os.path.join(base_dir, "data", "processed", "inovacao", "inovacao.csv")
     
     # DEBUG: Verifique se o arquivo existe
@@ -256,10 +256,9 @@ def load_pos_graduacao_data():
     base_dir = os.path.dirname(os.path.abspath(__file__))
     
     # Constrói o caminho relativo até a pasta dos CSVs
-    lato_path = os.path.join(BASE_DIR, "data", "processed", "pos-graduacao", "lato_sensu_processado.csv")
-    stricto_path = os.path.join(BASE_DIR, "data", "processed", "pos-graduacao", "stricto_sensu_processado.csv")
-   
-   
+    stricto_path = os.path.join(base_dir, "data", "processed", "pos-graduacao", "stricto_sensu_processado.csv")
+    lato_path = os.path.join(base_dir, "data", "processed", "pos-graduacao", "lato_sensu_processado.csv")
+
     # Tratamento Stricto Sensu
     stricto = pd.DataFrame()
     if os.path.exists(stricto_path):
